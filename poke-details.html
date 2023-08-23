@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Details</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,15 +22,14 @@
 
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/detailed-pokedex.css">
 </head>
-
 <body>
-    <section class="content">
+    <section class="content parent">
         <h1>Pokedex</h1>
-        <input type="button" onclick="location.href='./poke-details.html';" value="Go to Detailed Pokedex" />
+
         <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
+            <!-- ..... Detailed Pokemons here ..... -->
         </ol>
 
         <div class="pagination">
@@ -36,11 +38,9 @@
             </button>
         </div>
     </section>
-
-    <!-- Nosso JS -->
+        <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/poke-detailed.js"></script>
 </body>
-
 </html>
